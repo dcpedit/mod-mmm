@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "Footprints")(type "KiCad")(uri "${KIPRJMOD}/libraries/Kicad-STM32/Footprints")(options "")(descr ""))
+  (lib (name "daughterboard")(type "KiCad")(uri "${KIPRJMOD}/daughterboard.pretty")(options "")(descr ""))
+)
