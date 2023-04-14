@@ -66,15 +66,6 @@ The following is a table of measurements of everything that's stacked on top of 
 For the Mill-Max 315 series low profile sockets, I find it more cost efficient to just buy a really long socket and cut the sizes I need with flush cutters.  [Here's an example of a 1x64 socket.](https://www.mouser.com/ProductDetail/Mill-Max/315-93-164-41-003000?qs=WZRMhwwaLl%252BIMh92Iwf2Uw%3D%3D&countryCode=US&).  The only thing is that the edges are rough after the cut, but it doesn't bother me.
 
 ## PCB Build Guild
-![modmmm-15](https://user-images.githubusercontent.com/800930/232109547-0ac0f0de-39c2-4030-99ee-314af0cae293.jpg)
-![modmmm-11](https://user-images.githubusercontent.com/800930/232109607-c60fbea1-3cc1-49ef-b7e6-3e4ca23203c4.jpg)
-![modmmm-10](https://user-images.githubusercontent.com/800930/232109664-8749dece-aa71-459b-9a81-3c33fcf8f381.jpg)
-![build-1](https://user-images.githubusercontent.com/800930/232109711-958a86d3-5982-4581-a192-f5908ceb8127.jpg)
-![build-2](https://user-images.githubusercontent.com/800930/232109728-c4e8625a-e991-4d46-b60f-215ca8008962.jpg)
-![build-3](https://user-images.githubusercontent.com/800930/232109738-f275d87e-9415-4e2d-bade-86b1453beb47.jpg)
-![build-4](https://user-images.githubusercontent.com/800930/232109754-c7a9d37d-ef82-4177-98dc-f5aee326c10b.jpg)
-![build-5](https://user-images.githubusercontent.com/800930/232109792-ce302813-35ad-433c-9974-7e55c47346c5.jpg)
-![modmmm-1-2](https://user-images.githubusercontent.com/800930/232109839-f6c7762d-ffd9-423a-b53f-f585239db967.jpg)
 
 ### 1) Disassembly
 The first step is to disassemble your Model M and clean it if needs to be.  There are lots of tutorials online on how to do this.  I followed this one from YouTube: https://youtu.be/VsIr8dl_7Kk.
@@ -89,7 +80,9 @@ Using the hex standoffs and a few screws, mount the PCB onto the steel backplate
 
 Flip the PCB over to the backside and solder on the BAV70 diodes (D1 - D55). Place a dab of solder on the single bottom pad of the diode on the PCB. Then using tweesers, position the diode so that the legs line up with the pads. Then using the point of one tweeser leg, gently hold the top of the diode in place while melting the dab of solder that was placed on the bottom pad previously. With the diode now held in position, solder the top two legs to their respective pads.
 
-### 3) Kailh Hotswap sockets
+### 3) Kailh Hotswap Sockets & Rotary Encoders
+
+![build-1](https://user-images.githubusercontent.com/800930/232109711-958a86d3-5982-4581-a192-f5908ceb8127.jpg)
 
 Place some solder on one of the hot swap socket pads. There should be enough solder to make a small mound. Place the socket into position and melt the mound of solder that was previously added while pressing down on the center of the socket. Be sure to avoid touching any metalic parts to prevent burns. Keep the soldering iron on the pad long enough for the solder to flow around the socket connector (usually around 3 to 4 seconds). Now solder the other socket connector to the pad.
 
@@ -105,13 +98,19 @@ These LEDs go under the caps lock, scroll lock, num lock keys.  Depending on you
 
 Install your stabalizers of choice onto the PCB.  For the vertical stabs, in order to counteract the curvature of the PCB, I use those adhesive stabalizer pads and cut them in half lengthwise (band-aids would work as well).  I then placed them on the inside half of where the stabs would sit.  The idea here is to angle the stabs back out so that they remain parallel.
 
+![build-3](https://user-images.githubusercontent.com/800930/232109738-f275d87e-9415-4e2d-bade-86b1453beb47.jpg)
+
 ### 7) FFC Connector
+
+![build-2](https://user-images.githubusercontent.com/800930/232109728-c4e8625a-e991-4d46-b60f-215ca8008962.jpg)
 
 This can be a bit tricky to hand solder, so take it slow.  Place a dab of solder on one of the large pads on the side.  Position the connector on top of the pads making sure that the small pins are centered relative to their respective pads.  While holding the connector in place, melt the dab of solder that was placed earlier so that the one side is held in place.  Now solder the other end of the connector so that it's held securly in place.  Moving on to the the small pins, I initally tried "drag soldering", but I ended up bridging a lot of pins.  If this happens, just clean it up with some solder wick.
 
 I found that the better way to do this is to pull out the sharpest tip you have for your soldering iron, and placing a tiny dab of solder on each pad, while avoiding touching the adjacent pins with the iron tip.  And make sure you use plenty of flux.  This way, the solder will simply flow around the pin without briding the neighboring pins.
 
-### 8) Assemble
+### 8) Center and Install PCB
+
+![build-4](https://user-images.githubusercontent.com/800930/232109754-c7a9d37d-ef82-4177-98dc-f5aee326c10b.jpg)
 
 Starting with the steel backplate, insert a screw from the back and screw a standoff on from the other side.  Keep it loose enough so that the standoff can rattle around a bit.  Do this for all the mount holes on the steel plate, even if you end up not using them because they're still good for support.
 
@@ -125,18 +124,22 @@ With the PCB now centered, remove the top of the case and begin screwing in all 
 
 NOTE:  I noticed that the vertical 2u stabs in the numpad were blocking some of the screw holes in rev 1 of the PCB.  I flipped the stabs in rev 2 which is the version in the repo.
 
+![build-5](https://user-images.githubusercontent.com/800930/232109792-ce302813-35ad-433c-9974-7e55c47346c5.jpg)
+
 ## Daughterboard Build Guide
+
+![modmmm-15](https://user-images.githubusercontent.com/800930/232109547-0ac0f0de-39c2-4030-99ee-314af0cae293.jpg)
 
 ### 1) Solenoid Components
 Bend the narrow part of the pins on the TIP120 back towards the heatsink at a 90 degree angle.  Solder it into place.
 
 The 2.2k resistor goes into the R2.2 spot (orientation does not matter).  The 1N4001 diode goes in to the 1N4001 position where the line matches printed line on the board.
 
-### 2) 22k Pullup resistor
+### 2) 22k Pullup Resistor
 
 In order to use pin A10 on the Blackpill, a 22k pullup resistor is needed ([source](https://docs.qmk.fm/#/platformdev_blackpill_f4x1)). Solder this into the R1 position.  Orientation does not matter.
 
-### 3) Blackpill board
+### 3) Blackpill Development Board
 
 Solder the Mill-Max 315 sockets onto the daughterboard.  Then place a piece of masking tape over the pin holes, and insert each pin though the tape and into its hole.  Then set the Blackpill into place with the components facing UP and the USB port facing the top of the daughterboard.  Solder the pins into place, and carefully and slowly remove the Blackpill.  If you pull too fast and hard, one edge will suddenly pop loose, bending the pins on the opposite side.  Remove the masking tape, and push the Blackpill back into place.
 
@@ -147,6 +150,9 @@ Lazy-man's short cut: skip the masking tape.  But using too much solder will cau
 Solder this into the BZ1 position.  Orientation does not matter.
 
 ### 5) Assemble
+
+![modmmm-11](https://user-images.githubusercontent.com/800930/232109607-c60fbea1-3cc1-49ef-b7e6-3e4ca23203c4.jpg)
+![modmmm-10](https://user-images.githubusercontent.com/800930/232109664-8749dece-aa71-459b-9a81-3c33fcf8f381.jpg)
 
 Remove the steel backplate from the case if you haven't already.  If you have a Model M with the smaller PCB, you will need to clip away the plastic holder to make room for the larger footprint of the daughterboard.  Make sure the clamp on the FFC connector is lifted up, insert the FFC cable, and press the clamp back down.  Place the daughterboard into position inside the case bottom.  I don't have a good way to secure it to the case, so a piece of tape or double-sided adhesive foam will do for now.
 
