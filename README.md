@@ -17,6 +17,8 @@ Typing test video: https://youtu.be/1xZYpsqzFkc
 * Piezo buzzer
 * Solenoid
 * Vial firmware
+* 
+<img width="600" alt="Mod-Mmm-Layout" src="https://user-images.githubusercontent.com/800930/232115156-ab874c28-675d-408f-9d1f-ddae8f0cc6cb.png">
 
 ## The Build "Stack"
 
