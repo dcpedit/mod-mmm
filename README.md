@@ -15,6 +15,8 @@ This project is designed to replace all internal compoents of an IBM Model M key
 * Piezo buzzer
 * Solenoid
 * Vial firmware
+* 
+<img width="600" alt="Mod-Mmm-Layout" src="https://user-images.githubusercontent.com/800930/232115156-ab874c28-675d-408f-9d1f-ddae8f0cc6cb.png">
 
 ## The Build "Stack"
 
