@@ -162,6 +162,8 @@ BUT, after some testing, I noticed that my Kailh Box White switches were not ver
 
 Unfortunately, there was not enough room in the case to house a single switch plate that covered the entire board, so I had to cut the plate up into smaller sections (9 total), which ended up working pretty well.  The Esc key had it's own little 1u switch plate, so the stability wasn't great, but it'll have to do.
 
+![modmmm-9](https://user-images.githubusercontent.com/800930/232112496-89a89cb3-0163-47f3-b9e9-8124393ee40b.jpg)
+
 ## Inspiration
 
 I want to mention all the projects/products that has inspired the creation of the Model Mmm:
