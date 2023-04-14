@@ -2,6 +2,9 @@
 
 This project is designed to replace all internal compoents of an IBM Model M keyboard.  The only thing that that needs to stay is the curved steel plate since the PCB will be mounted on this.
 
+![modmmm-18](https://user-images.githubusercontent.com/800930/232109322-dad95236-db6f-4ee4-b8dc-26e65340556f.jpg)
+![modmmm-17](https://user-images.githubusercontent.com/800930/232109356-5c60572b-d0c1-467e-a8aa-fb8bb116f13a.jpg)
+
 ## Features
 
 * Hotswap PCB for MX switches
@@ -63,6 +66,15 @@ The following is a table of measurements of everything that's stacked on top of 
 For the Mill-Max 315 series low profile sockets, I find it more cost efficient to just buy a really long socket and cut the sizes I need with flush cutters.  [Here's an example of a 1x64 socket.](https://www.mouser.com/ProductDetail/Mill-Max/315-93-164-41-003000?qs=WZRMhwwaLl%252BIMh92Iwf2Uw%3D%3D&countryCode=US&).  The only thing is that the edges are rough after the cut, but it doesn't bother me.
 
 ## PCB Build Guild
+![modmmm-15](https://user-images.githubusercontent.com/800930/232109547-0ac0f0de-39c2-4030-99ee-314af0cae293.jpg)
+![modmmm-11](https://user-images.githubusercontent.com/800930/232109607-c60fbea1-3cc1-49ef-b7e6-3e4ca23203c4.jpg)
+![modmmm-10](https://user-images.githubusercontent.com/800930/232109664-8749dece-aa71-459b-9a81-3c33fcf8f381.jpg)
+![build-1](https://user-images.githubusercontent.com/800930/232109711-958a86d3-5982-4581-a192-f5908ceb8127.jpg)
+![build-2](https://user-images.githubusercontent.com/800930/232109728-c4e8625a-e991-4d46-b60f-215ca8008962.jpg)
+![build-3](https://user-images.githubusercontent.com/800930/232109738-f275d87e-9415-4e2d-bade-86b1453beb47.jpg)
+![build-4](https://user-images.githubusercontent.com/800930/232109754-c7a9d37d-ef82-4177-98dc-f5aee326c10b.jpg)
+![build-5](https://user-images.githubusercontent.com/800930/232109792-ce302813-35ad-433c-9974-7e55c47346c5.jpg)
+![modmmm-1-2](https://user-images.githubusercontent.com/800930/232109839-f6c7762d-ffd9-423a-b53f-f585239db967.jpg)
 
 ### 1) Disassembly
 The first step is to disassemble your Model M and clean it if needs to be.  There are lots of tutorials online on how to do this.  I followed this one from YouTube: https://youtu.be/VsIr8dl_7Kk.
