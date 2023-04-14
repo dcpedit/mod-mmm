@@ -1,6 +1,8 @@
 # Mod Mmm PCB for the IBM Model M
 
-This project is designed to replace all internal compoents of an IBM Model M keyboard.  The only thing that that needs to stay is the curved steel plate since the PCB will be mounted on this.
+This project is designed to replace all internal compoents of an IBM Model M keyboard.  The only thing that that needs to stay is the curved steel backplate for the PCB to be mounted on.
+
+Typing test video: https://youtu.be/1xZYpsqzFkc
 
 ![modmmm-18](https://user-images.githubusercontent.com/800930/232109322-dad95236-db6f-4ee4-b8dc-26e65340556f.jpg)
 ![modmmm-17](https://user-images.githubusercontent.com/800930/232109356-5c60572b-d0c1-467e-a8aa-fb8bb116f13a.jpg)
@@ -37,7 +39,7 @@ The following is a table of measurements of everything that's stacked on top of 
 | Blackpill (STM32F411)       | 1     |
 | M2.5x3mm Wafer Screw        | 116   | [Link](https://www.aliexpress.us/item/2255800885711092.html?spm=a2g0o.order_list.order_list_main.22.1875180223MOsy&gatewayAdapt=glo2usa&_randl_shipto=US)
 | M2.5x4mm Hex Standoff       | 58    | [Link](https://www.aliexpress.us/item/2251832790997097.html?spm=a2g0o.order_list.order_list_main.23.1875180223MOsy&gatewayAdapt=glo2usa&_randl_shipto=US)
-| M2.5x5.5 Insulated Washer   | 58    | [Link](https://www.aliexpress.us/item/2255801049052739.html?spm=a2g0o.order_list.order_list_main.24.1875180223MOsy&gatewayAdapt=glo2usa&_randl_shipto=US)
+| M2.5x5.5 Insulated Washer   | 58    | Probably not needed (step 8).  [Link](https://www.aliexpress.us/item/2255801049052739.html?spm=a2g0o.order_list.order_list_main.24.1875180223MOsy&gatewayAdapt=glo2usa&_randl_shipto=US)
 | BAV70 Diodoe                | 55    | [Link](https://www.mouser.com/ProductDetail/Nexperia/BAV70215?qs=me8TqzrmIYX%252B%2FJ6jIjzNeA%3D%3D&countrycode=US&currencycode=USD)
 | Piezo Buzzer                | 1     | [Link](https://www.digikey.com/en/products/detail/tdk-corporation/PS1240P02BT/935924)
 | 5v Solenoid                 | 1     | [Link](https://www.digikey.com/en/products/detail/sparkfun-electronics/ROB-11015/6163694)
@@ -120,7 +122,7 @@ Line up the PCB over the holes and place 2 screws positioned horizontally from e
 
 Now place a switch + keycap at the corner of every section of the keyboard (ex: Esc, F1, ~, Ctrl, Print, Num-Lock, Num-Enter, etc).  Put the top of the Model-M case on and make sure it's aligned and fully seated with no gaps.  Carefully shift the PCB around slightly to get the keycaps to be in the correct position with equal amounts of spacing from the keycap to the case walls.  Basically you're trying to center the PCB by eye-balling at the keycap gaps.
 
-With the PCB now centered, remove the top of the case and begin screwing in all the mounting screws.  I'd suggest starting near the center and spiral outwards towards the edges.  After you're done, remove the steel backplate from the bottom of the case and tighten all the screws on the back.  If you feel that the standoffs are just spinning while you're turning the screw, just squeeze the PCB and backplate together so that it pinches the standoff and keeps it from spinning.
+With the PCB now centered, remove the top of the case and begin screwing in all the mounting screws.  I'd suggest starting near the center and spiral outwards towards the edges.  If you run into the problem where the top and bottom screws bump into each other inside the standoff, you may need to add an insulated washer to the bottom screw.  After you're done, remove the steel backplate from the bottom of the case and tighten all the screws on the back.  If you feel that the standoffs are just spinning while you're turning the screw, just squeeze the PCB and backplate together so that it pinches the standoff and keeps it from spinning.
 
 NOTE:  I noticed that the vertical 2u stabs in the numpad were blocking some of the screw holes in rev 1 of the PCB.  I flipped the stabs in rev 2 which is the version in the repo.
 
@@ -130,26 +132,26 @@ NOTE:  I noticed that the vertical 2u stabs in the numpad were blocking some of 
 
 ![modmmm-15](https://user-images.githubusercontent.com/800930/232109547-0ac0f0de-39c2-4030-99ee-314af0cae293.jpg)
 
-### 1) Solenoid Components
+### a) Solenoid Components
 Bend the narrow part of the pins on the TIP120 back towards the heatsink at a 90 degree angle.  Solder it into place.
 
 The 2.2k resistor goes into the R2.2 spot (orientation does not matter).  The 1N4001 diode goes in to the 1N4001 position where the line matches printed line on the board.
 
-### 2) 22k Pullup Resistor
+### b) 22k Pullup Resistor
 
 In order to use pin A10 on the Blackpill, a 22k pullup resistor is needed ([source](https://docs.qmk.fm/#/platformdev_blackpill_f4x1)). Solder this into the R1 position.  Orientation does not matter.
 
-### 3) Blackpill Development Board
+### c) Blackpill Development Board
 
 Solder the Mill-Max 315 sockets onto the daughterboard.  Then place a piece of masking tape over the pin holes, and insert each pin though the tape and into its hole.  Then set the Blackpill into place with the components facing UP and the USB port facing the top of the daughterboard.  Solder the pins into place, and carefully and slowly remove the Blackpill.  If you pull too fast and hard, one edge will suddenly pop loose, bending the pins on the opposite side.  Remove the masking tape, and push the Blackpill back into place.
 
 Lazy-man's short cut: skip the masking tape.  But using too much solder will cause it to flow down the pin and into the socket.  If you do, the keyboard will still work, but you won't be able to remove the Blackpill without desoldering.
 
-### 4) Piezo Buzzer
+### d) Piezo Buzzer
 
 Solder this into the BZ1 position.  Orientation does not matter.
 
-### 5) Assemble
+### e) Assemble
 
 ![modmmm-11](https://user-images.githubusercontent.com/800930/232109607-c60fbea1-3cc1-49ef-b7e6-3e4ca23203c4.jpg)
 ![modmmm-10](https://user-images.githubusercontent.com/800930/232109664-8749dece-aa71-459b-9a81-3c33fcf8f381.jpg)
