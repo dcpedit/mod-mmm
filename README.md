@@ -32,6 +32,8 @@ The following is a table of measurements of everything that's stacked on top of 
 | Plate Foam      | 3.5            | n/a         | n/a          | n/a
 | Switch Plate    | 1.5            | 267.385     | center       | 20.201
 
+![modmmm-1-3](https://user-images.githubusercontent.com/800930/232261815-2a74097f-7007-439b-a1be-f1e9512ef58a.jpg)
+
 ## Parts List
 
 | Part                        | Count | Notes |
