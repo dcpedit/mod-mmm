@@ -38,8 +38,8 @@ The following is a table of measurements of everything that's stacked on top of 
 
 | Part                        | Count | Notes |
 |-----------------------------|-------|-------|
-| Mod Mmm PCB                 | 1     |
-| Mod Mmm Daughterboard       | 1     |
+| Mod Mmm PCB                 | 1     | 1mm FR4 thickness
+| Mod Mmm Daughterboard       | 1     | 1.2mm FR4 thickness
 | Blackpill (STM32F411)       | 1     |
 | M2.5x3mm Wafer Screw        | 116   | [Link](https://www.aliexpress.us/item/2255800885711092.html?spm=a2g0o.order_list.order_list_main.22.1875180223MOsy&gatewayAdapt=glo2usa&_randl_shipto=US)
 | M2.5x4mm Hex Standoff       | 58    | [Link](https://www.aliexpress.us/item/2251832790997097.html?spm=a2g0o.order_list.order_list_main.23.1875180223MOsy&gatewayAdapt=glo2usa&_randl_shipto=US)
@@ -65,17 +65,19 @@ The following is a table of measurements of everything that's stacked on top of 
 | 7u plate mount stabalizer   | 1     | For 7u spacebar
 | EC11 Rotary Encoder         | 3     | Optional [Link](https://www.mouser.com/ProductDetail/Bourns/PEC12R-4222F-S0024?qs=%252B9%2Fcbd0IE0SDcVz9RehHSg%3D%3D)
 | Rotary Encoder Knob (17mm)  | 3     | Optional [Link](https://www.amazon.com/dp/B07K8589MJ?ref=ppx_yo2ov_dt_b_product_details&th=1)
-| Switch plate (9 pieces)     | 1     | Optional 1.5mm acrylic
+| Switch plate (9 piece set)  | 1     | Optional 1.5mm acrylic
 | Plate Foam                  | 1     | Optional 3.5mm EVA foam (or 2mm + [1.5mm](https://www.aliexpress.us/item/3256804208838525.html?spm=a2g0o.order_list.order_list_main.5.21ef1802FA7EIC&gatewayAdapt=glo2usa&_randl_shipto=US))
 
 For the Mill-Max 315 series low profile sockets, I found it more cost efficient to just buy a really long socket and cut the sizes I need with flush cutters.  [Here's an example of a 1x64 socket.](https://www.mouser.com/ProductDetail/Mill-Max/315-93-164-41-003000?qs=WZRMhwwaLl%252BIMh92Iwf2Uw%3D%3D&countryCode=US&).  The only thing is that the edges are rough after the cut, but it doesn't bother me.
 
 ## PCB Build Guild
 
-### 1) Disassembly
-The first step is to disassemble your Model M and clean it if needs to be.  There are lots of tutorials online on how to do this, and make sure you have a 7/32 inch (5.5mm) socket for the case screws.  I followed this one from YouTube: https://youtu.be/VsIr8dl_7Kk.
+To complete this build, you will need to get the main PCB and daughterboard manufactured.  The main PCB will need to be **1mm thick FR4**, and I made the daughterboard 1.2mm to match the thickness of the original one that came with the keyboard.  I personally like using [JLCPCB](https://jlcpcb.com/), so I've included a `zip` file in the each respective directory that you can upload to their service if you decide to go with them.  (FYI, you will need to order a minimum of 5 boards each).
 
-The hardest part is removing the plastic rivets that holds the frame assembly against the steel backplate.  I used a razor blade with a few pieces of electrical tape wrapped around the back for better grip and for safety (to easily tell which is the sharp side).  I would then rock the blade around a rivet in a "see-saw" motion while putting pressure on the blade until it popped off.  I'd be a good idea to place some type of "backstop" like tall box to prevent the rivets from flying everywhere.
+### 1) Disassembly
+The first step is to disassemble your Model M and clean it if neccessary.  There are lots of tutorials online on how to do this, and make sure you have a 7/32 inch (5.5mm) socket for the case screws.  I followed this one from YouTube: https://youtu.be/VsIr8dl_7Kk.
+
+The hardest part is removing the plastic rivets that holds the frame assembly against the steel backplate.  I used a razor blade with a few pieces of electrical tape wrapped around the back for better grip and for safety (to easily tell which is the sharp side).  I would then rock the blade around a rivet in a "see-saw" motion while putting pressure on the blade until it popped off.  It'd be a good idea to place some type of "backstop" like tall box to prevent the rivets from flying everywhere.
 
 ### 2) Shape PCB
 
@@ -119,7 +121,7 @@ I found that the better way to do this is to pull out the sharpest tip you have 
 
 ![build-4](https://user-images.githubusercontent.com/800930/232109754-c7a9d37d-ef82-4177-98dc-f5aee326c10b.jpg)
 
-Starting with the steel backplate, insert a screw from the back and screw a standoff on from the other side.  Keep it loose enough so that the standoff can rattle around a bit.  Do this for all the mount holes on the steel plate, even if you end up not using them because they're still good for support.  (Note that in my photo, I skipped some holes.  I need to verify that placing a standoff there won't interfere with anything)
+Starting with the steel backplate, insert a screw from the back and screw a standoff on from the other side.  Keep it loose enough so that the standoff can rattle around a bit.  Do this for all the mount holes on the steel plate, even if you end up not using them because they're still good for support.  (Note that in my photo, I skipped some holes.  I need to verify that placing a standoff there won't interfere with anything).  You should also put a standoff in corner top-right hole beneath the plastic post for added support.
 
 Slip the steel backplate back into the bottom of the case.  You'll need to slide the bottom into the slots first, and then place the plastic case posts into the top-left and top-right corners of the steel backplate.
 
@@ -172,7 +174,7 @@ Put the steel backplate with mounted PCB back into place, and connect the other 
 
 BUT, after some testing, I noticed that my Kailh Box White switches were not very stable.  This is probably due to the fact they they were 3 pin switches instead of 5, and the hot swap sockets didn't grip the switch pins that tightly.  This is why I opted to make a switch plate to better hold the switches in place.  This also meant I had to cut 3.5mm thick foam (technically 2mm + 1.5mm) to act as a spacer between the PCB and the switch plate.
 
-Unfortunately, there was not enough room in the case to house a single switch plate that spanned the entire board, so I had to cut the plate up into smaller sections (9 total), which ended up working pretty well.  The Esc key had its own little 1u switch plate, so the stability still wasn't great, but it'll have to do.  I also messed up the foam spacing for the top row, so I had to cut it off as a separate piece.  This is fixed in the repo version.
+Unfortunately, there was not enough room in the case to house a single switch plate that spanned the entire board, so I had to break the plate up into smaller sections (9 total), which ended up working pretty well.  The Esc key had its own little 1u switch plate, so the stability still wasn't great, but it'll have to do.  I also messed up the foam spacing for the top row, so I had to cut it off as a separate piece.  This is fixed in the repo version, which is in the `plate-ansi` directory.
 
 ![modmmm-9](https://user-images.githubusercontent.com/800930/232112496-89a89cb3-0163-47f3-b9e9-8124393ee40b.jpg)
 

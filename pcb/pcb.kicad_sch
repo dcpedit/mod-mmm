@@ -4894,7 +4894,7 @@
     (in_bom yes) (on_board yes)
     (uuid 3e587754-08bf-4e2f-861f-e6f342837f7f)
     (property "Reference" "R5" (id 0) (at 82.55 237.5916 90))
-    (property "Value" "1.5K" (id 1) (at 82.55 239.903 90))
+    (property "Value" "10K" (id 1) (at 82.55 239.903 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" (id 2) (at 82.55 242.57 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5261,7 +5261,7 @@
     (in_bom yes) (on_board yes)
     (uuid 594149a8-dcf4-477c-8bc6-ce49fe795a88)
     (property "Reference" "R4" (id 0) (at 82.55 226.1616 90))
-    (property "Value" "1.5K" (id 1) (at 82.55 228.473 90))
+    (property "Value" "10K" (id 1) (at 82.55 228.473 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" (id 2) (at 82.55 231.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -7653,7 +7653,7 @@
     (in_bom yes) (on_board yes)
     (uuid d9e43349-c262-4673-9be5-82fe3b06b371)
     (property "Reference" "R6" (id 0) (at 82.55 249.0216 90))
-    (property "Value" "1.5K" (id 1) (at 82.55 251.333 90))
+    (property "Value" "10K" (id 1) (at 82.55 251.333 90))
     (property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" (id 2) (at 82.55 254 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -9051,13 +9051,13 @@
       (reference "R3") (unit 1) (value "470") (footprint "")
     )
     (path "/594149a8-dcf4-477c-8bc6-ce49fe795a88"
-      (reference "R4") (unit 1) (value "1.5K") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
+      (reference "R4") (unit 1) (value "10K") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
     )
     (path "/3e587754-08bf-4e2f-861f-e6f342837f7f"
-      (reference "R5") (unit 1) (value "1.5K") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
+      (reference "R5") (unit 1) (value "10K") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
     )
     (path "/d9e43349-c262-4673-9be5-82fe3b06b371"
-      (reference "R6") (unit 1) (value "1.5K") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
+      (reference "R6") (unit 1) (value "10K") (footprint "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal")
     )
     (path "/956d7a0d-344f-4ad9-8679-52e88c72815a"
       (reference "SCRL1") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm_Clear")
