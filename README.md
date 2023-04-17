@@ -130,6 +130,7 @@ I found that the better way to do this is to pull out the sharpest tip you have 
 There's probably other connectors out there that can do the same job at a cheaper price.  I'm not an expert on FFC components, so all suggestions are welcome.  (Same thing for the FFC cable)
 
 ### 8) Center and Install PCB
+![build-circled](https://user-images.githubusercontent.com/800930/232625466-0676a615-4421-4da6-9b45-dd2a7633bbeb.jpg)
 
 ![build-4](https://user-images.githubusercontent.com/800930/232109754-c7a9d37d-ef82-4177-98dc-f5aee326c10b.jpg)
 
