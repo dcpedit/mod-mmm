@@ -1,3 +1,5 @@
+<img width="600" alt="Mod Mmm Logo" src="https://user-images.githubusercontent.com/800930/232400201-ab35cbc2-b59a-45c5-84b7-f77faa91e6b6.png"/>
+
 # Mod Mmm PCB for the IBM Model M
 
 This project is designed to replace all internal compoents of an IBM Model M keyboard.  The only thing that needs to stay is the curved steel backplate for the PCB to be mounted on.
