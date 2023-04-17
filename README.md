@@ -22,6 +22,7 @@ Image gallery: https://imgur.com/a/R9mSC4u
 * Supports up to 3 rotary encoders
 * Piezo buzzer
 * Solenoid
+* USB-C support via STM32F411 Blackpill.  Need to validate Bluetooth PillBug support.
 * Vial firmware
 
 <img width="600" alt="Mod-Mmm-Layout" src="https://user-images.githubusercontent.com/800930/232115156-ab874c28-675d-408f-9d1f-ddae8f0cc6cb.png">
@@ -54,7 +55,7 @@ The following is a table of measurements of everything that's stacked on top of 
 | Piezo Buzzer                | 1     | [Link](https://www.digikey.com/en/products/detail/tdk-corporation/PS1240P02BT/935924)
 | 5v Solenoid                 | 1     | [Link](https://www.digikey.com/en/products/detail/sparkfun-electronics/ROB-11015/6163694)
 | Kailh Hotswap Sockets       | 101   | More needed if non-ANSI layout
-| FFC Cable (30 pos/1mm pitch)| 1     | [Link](https://www.digikey.com/en/products/detail/molex/0151670470/3281723)
+| FFC Cable (30 pos/1mm pitch)| 1     | Cable length: 30 inches [Link](https://www.digikey.com/en/products/detail/molex/0151670470/3281723)
 | FFC Connector (30 pos/1mm)  | 2     | [Link](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/XF3M-1-3015-1B/4331813)
 | 3mm LED (green)             | 3     | For status panel. [Link](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/151031VS06000/4489988)
 | 2mm LED (white)             | 3     | For keycap status. [Link](https://www.amazon.com/gp/product/B01C5HL0PO/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
@@ -76,7 +77,7 @@ The following is a table of measurements of everything that's stacked on top of 
 
 For the Mill-Max 315 series low profile sockets, I found it more cost efficient to just buy a really long socket and cut the sizes I need with flush cutters.  [Here's an example of a 1x64 socket.](https://www.mouser.com/ProductDetail/Mill-Max/315-93-164-41-003000?qs=WZRMhwwaLl%252BIMh92Iwf2Uw%3D%3D&countryCode=US&).  The only thing is that the edges are rough after the cut, but it doesn't bother me.
 
-You can probably use others ways to mount the Blackpill.  Just make sure that final height of the USB port is somewhat centered vertically inside the case port.
+You can probably use others ways to mount the Blackpill.  Just make sure that final height of the USB port is somewhat centered inside the case port.
 
 ## PCB Build Guild
 
@@ -101,21 +102,25 @@ Flip the PCB over to the backside and solder on the BAV70 diodes (D1 - D55). Pla
 
 Place some solder on one of the hot swap socket pads. There should be enough solder to make a small mound. Place the socket into position and melt the mound of solder that was previously added while pressing down on the center of the socket. Be sure to avoid touching any metalic parts to prevent burns. Keep the soldering iron on the pad long enough for the solder to flow around the socket connector (usually around 3 to 4 seconds). Now solder the other socket connector to the pad.
 
-You can replace any of the keys in the Print Screen cluster with a rotary encoder.  Just make sure you don't place a hotswap socket there, and solder the EC11 encoder there instead.
+You can replace any of the keys in the Print Screen cluster with a rotary encoder.  Just make sure you don't place a hotswap socket there, and solder in the EC11 encoder instead.
 
-Also realized the logo on the back is way too busy.  I've changed it to be a small logo on the front in v2, which is the current version.
+Also realized the logo on the back is way too busy.  I've changed it to be a small logo on the front in v2, which is the current repo version.
 
 ### 4) Status Panel LEDs and resistors
 
-These three LEDs go under the status panel (NUM1, CAP1, and SCRL1).  The short pin of the LED goes in the square pad.  As for the accompanying 470Ω resistors (R4, R5, and R6), orientation does not matter.  The LEDs here can be soldered in with extra height so that they sit closer to the "window" on the case, but I have not measered out what that distance should be yet.  Should be easy to do with some putty.
+These three LEDs go under the status panel (NUM1, CAP1, and SCRL1).  The short pin of the LED goes in the square pad.  As for the accompanying 470Ω resistors (R4, R5, and R6), orientation does not matter.  The LEDs here can be soldered in with extra height so that they sit closer to the "window" cutout on the case, but I have not measured out what that distance should be yet.  Should be easy to do with some putty.
 
 ### 5) Switch LEDs and resistors (optional)
 
 These LEDs go under the caps lock, scroll lock, num lock switches.  Depending on your switch, you may have to solder these in AFTER placing the switch into the socket.  You can tell by looking under the switch to see if there's a hole big enough for the LED to fit through.  If there are only 2 small holes for the LED pins, then the switch needs to go in first.  The short pin of the LED goes in the square pad.  As for the accompanying 10kΩ resistors (R1, R2, and R3), orientation does not matter.
 
+I use a higher resistance here for the white LEDs because they tend to be too bright for me personally.  Feel free to lower the resistance if you want them brighter, or if you choose a different color.
+
 ### 6) Stabalizers
 
-Install your stabalizers of choice onto the PCB.  For the vertical stabs, in order to counteract the curvature of the PCB, I use those adhesive stabalizer pads and cut them in half lengthwise (band-aids would work as well).  I then placed them on the inside half of where the stabs would sit.  The idea here is to angle the stabs back outwards so that they remain parallel.
+Install your stabalizers of choice onto the PCB.  For the vertical stabs, in order to counteract the curvature of the PCB, I used adhesive stabalizer pads and cut them in half lengthwise (band-aids would work as well).  I then placed them on the inside half of where the stabs would sit.  The idea here is to angle the stabs back outwards so that they remain parallel.
+
+Note that I made all the stab holes a tad larger in the vertical direction to allow for some wiggle room.
 
 ![build-3](https://user-images.githubusercontent.com/800930/232109738-f275d87e-9415-4e2d-bade-86b1453beb47.jpg)
 
@@ -133,15 +138,15 @@ There's probably other connectors out there that can do the same job at a cheape
 
 ![build-4](https://user-images.githubusercontent.com/800930/232109754-c7a9d37d-ef82-4177-98dc-f5aee326c10b.jpg)
 
-Starting with the steel backplate, insert a screw from the back and screw a standoff on from the other side.  Keep it loose enough so that the standoff can rattle around a bit.  Do this for all the mount holes on the steel plate, even if you end up not using them because they're still good for support.  (Note that in my photo, I skipped some holes.  I need to verify that placing a standoff there won't interfere with anything).  You should also put a standoff in corner top-right hole beneath the plastic post for added support.
+Starting with the steel backplate, insert a screw from the back and screw a standoff on from the other side.  Keep it loose enough so that the standoff can rattle around a bit.  Do this for all the mount holes on the steel plate, even if you end up not using them because they're still good for support.  Make note of the holes that are left open in my photo above and do the same to prevent interference with the case/components. You should also put a standoff in corner top-right hole beneath the plastic post for added support.
 
 Slip the steel backplate back into the bottom of the case.  You'll need to slide the bottom into the slots first, and then place the plastic case posts into the top-left and top-right corners of the steel backplate.
 
-Line up the PCB over the holes and place 2 or 3 screws positioned horizontally from each other near the center of the PCB.  Push the center firmly down onto the standoffs to force the PCB to bend (this part is a bit nerve racking, especialy when you hear creaking noises), and secure it the screws while holding it in place.
+Line up the PCB over the holes and place 2 or 3 screws positioned horizontally from each other near the center of the PCB.  Push the center firmly down onto the standoffs to force the PCB to bend (this part is a bit nerve racking, especialy when you hear creaking noises), and secure it with the screws while holding it in place.
 
-Now place a switch + keycap at the corner of every section of the keyboard (ex: Esc, F1, ~, Ctrl, Print, Num-Lock, Num-Enter, etc).  Put the top of the Model-M case on, making sure it's aligned and fully seated with no gaps.  Carefully shift the PCB around slightly to get the keycaps to be in the correct position with equal amounts of spacing from the keycap to the case walls.  Basically you're trying to center the PCB by eye-balling the keycap gaps.
+Now place a switch and keycap combo at the corner of every section of the keyboard (ex: Esc, F1, ~, Ctrl, Print, Num-Lock, Num-Enter, etc).  Put the top of the Model-M case on, making sure it's aligned and fully seated with no gaps.  Carefully shift the PCB around slightly to get the keycaps to be in the correct position with equal amounts of spacing from the keycap to the case walls.  Basically you're trying to center the PCB by eye-balling the keycap gaps.
 
-With the PCB now centered, remove the top of the case and begin screwing in all the mounting screws.  I'd suggest starting near the center and spiral outwards towards the edges.  These is where you'll probably need to shift the loose standoffs around to line the holes up.  Also, if you run into the problem where the top and bottom screws bump into each other inside the standoff, you'll need to add an insulated washer to the bottom screw.  Place the top case back on every once in a while to make sure the PCB didn't shift and is still centered.  After you're done, remove the steel backplate from the bottom of the case and tighten all the screws on the back.  If you feel that the standoffs are just spinning while you're turning the screw, just squeeze the PCB and backplate together so that it pinches the standoff and keeps it from spinning.
+With the PCB now centered, remove the top of the case and begin screwing in all the mounting screws.  I'd suggest starting near the center and spiral outwards towards the edges.  This is where you'll probably need to shift the loose standoffs around to line the holes up.  Also, if you run into the problem where the top and bottom screws bump into each other inside the standoff, you'll need to add an insulated washer to the bottom screw.  Place the top case back on every once in a while to make sure the PCB didn't shift and is still centered.  After you're done, remove the steel backplate from the bottom of the case and tighten all the screws on the back.  If you feel that the standoffs are just spinning while you're turning the screw, just squeeze the PCB and backplate together so that it pinches the standoff and keeps it from spinning.
 
 NOTE:  I noticed that the vertical 2u stabs in the numpad were blocking some of the screw holes in rev 1 of the PCB.  I flipped the stabs in rev 2 which is the version in the repo.
 
@@ -162,14 +167,14 @@ In order to use pin A10 on the Blackpill, a 22k pullup resistor is needed (accor
 
 ### c) Blackpill Development Board
 
-It's probably best to flash the firmware onto the Blackpill first using `bin` file in the `firmware` directory. Hook it up to [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases) and push the following buttons to place it in bootloader mode before flashing:
+It's probably best to flash the firmware onto the Blackpill first using the `bin` file in the `firmware` directory. Hook it up to [QMK Toolbox](https://github.com/qmk/qmk_toolbox/releases) and push the following buttons to place it in bootloader mode before flashing:
 * Press and hold the BOOT0 button
 * Press and release NRST (reset) button
 * Release BOOT0 button
 
-Solder the Mill-Max 315 sockets onto the daughterboard.  Then place a piece of masking tape over the pin holes, and insert each pin though the tape and into its hole with tweezers.  Then set the Blackpill into place with the components facing UP and the USB port facing the top of the daughterboard.  Solder the pins into place, and then carefully and slowly remove the Blackpill.  If you pull too fast and hard, one edge will suddenly pop loose, bending the pins on the opposite side.  Remove the masking tape, and push the Blackpill back into place.
+Solder the Mill-Max 315 sockets onto the daughterboard.  Then place a piece of masking tape over the pin holes, and insert each pin though the tape and into its hole with tweezers.  Then set the Blackpill into place with the components facing up and the USB port facing the top of the daughterboard.  Solder the pins into place, and then carefully and slowly remove the Blackpill.  If you pull too fast and hard, one edge will suddenly pop loose, bending the pins on the opposite side.  Remove the masking tape, and push the Blackpill back into place.
 
-Lazy-man's short cut: skip the masking tape.  But note that using too much solder will cause it to flow down the pin and into the socket.  If you do, the keyboard will still work, but you won't be able to remove the Blackpill without desoldering.
+Lazy-man's short cut: skip the masking tape.  But note that using too much solder will cause it to flow down the pin and into the socket.  If this happens, the keyboard will still work, but you won't be able to remove the Blackpill without desoldering.
 
 ### d) Piezo Buzzer
 
