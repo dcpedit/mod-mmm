@@ -2,7 +2,9 @@
 
 This project is designed to replace all internal compoents of an IBM Model M keyboard.  The only thing that needs to stay is the curved steel backplate for the PCB to be mounted on.
 
-Typing test video: https://youtu.be/bYVQCdWaI7s
+Typing test video: https://youtu.be/QOiLOHnEyzo
+
+Image gallery: https://imgur.com/a/R9mSC4u
 
 ![modmmm-18](https://user-images.githubusercontent.com/800930/232109322-dad95236-db6f-4ee4-b8dc-26e65340556f.jpg)
 ![modmmm-17](https://user-images.githubusercontent.com/800930/232109356-5c60572b-d0c1-467e-a8aa-fb8bb116f13a.jpg)
@@ -47,9 +49,9 @@ The following is a table of measurements of everything that's stacked on top of 
 | BAV70 Diodoe                | 55    | [Link](https://www.mouser.com/ProductDetail/Nexperia/BAV70215?qs=me8TqzrmIYX%252B%2FJ6jIjzNeA%3D%3D&countrycode=US&currencycode=USD)
 | Piezo Buzzer                | 1     | [Link](https://www.digikey.com/en/products/detail/tdk-corporation/PS1240P02BT/935924)
 | 5v Solenoid                 | 1     | [Link](https://www.digikey.com/en/products/detail/sparkfun-electronics/ROB-11015/6163694)
-| Kailh Hotswap Sockets       | 10    4 | More sockets for non-ansi layouts
-| FFC Connector (30 pos)      | 2     | [Link](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/XF3M-1-3015-1B/4331813)
-| FFC Cable (30 pos)          | 1     | [Link](https://www.digikey.com/en/products/detail/molex/0151670470/3281723)
+| Kailh Hotswap Sockets       | 101   | More needed if non-ANSI layout
+| FFC Cable (30 pos/1mm pitch)| 1     | [Link](https://www.digikey.com/en/products/detail/molex/0151670470/3281723)
+| FFC Connector (30 pos/1mm)  | 2     | [Link](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/XF3M-1-3015-1B/4331813)
 | 3mm LED (green)             | 3     | For status panel. [Link](https://www.digikey.com/en/products/detail/w%C3%BCrth-elektronik/151031VS06000/4489988)
 | 2mm LED (white)             | 3     | For keycap status. [Link](https://www.amazon.com/gp/product/B01C5HL0PO/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)
 | 470Ω Resistor               | 3     | For panel LED |
@@ -69,6 +71,8 @@ The following is a table of measurements of everything that's stacked on top of 
 | Plate Foam                  | 1     | Optional 3.5mm EVA foam (or 2mm + [1.5mm](https://www.aliexpress.us/item/3256804208838525.html?spm=a2g0o.order_list.order_list_main.5.21ef1802FA7EIC&gatewayAdapt=glo2usa&_randl_shipto=US))
 
 For the Mill-Max 315 series low profile sockets, I found it more cost efficient to just buy a really long socket and cut the sizes I need with flush cutters.  [Here's an example of a 1x64 socket.](https://www.mouser.com/ProductDetail/Mill-Max/315-93-164-41-003000?qs=WZRMhwwaLl%252BIMh92Iwf2Uw%3D%3D&countryCode=US&).  The only thing is that the edges are rough after the cut, but it doesn't bother me.
+
+You can probably use others ways to mount the Blackpill.  Just make sure that final height of the USB port is somewhat centered vertically inside the case port.
 
 ## PCB Build Guild
 
@@ -95,6 +99,8 @@ Place some solder on one of the hot swap socket pads. There should be enough sol
 
 You can replace any of the keys in the Print Screen cluster with a rotary encoder.  Just make sure you don't place a hotswap socket there, and solder the EC11 encoder there instead.
 
+Also realized the logo on the back is way too busy.  I've changed it to be a small logo on the front in v2, which is the current version.
+
 ### 4) Status Panel LEDs and resistors
 
 These three LEDs go under the status panel (NUM1, CAP1, and SCRL1).  The short pin of the LED goes in the square pad.  As for the accompanying 470Ω resistors (R4, R5, and R6), orientation does not matter.  The LEDs here can be soldered in with extra height so that they sit closer to the "window" on the case, but I have not measered out what that distance should be yet.  Should be easy to do with some putty.
@@ -116,6 +122,8 @@ Install your stabalizers of choice onto the PCB.  For the vertical stabs, in ord
 This can be a bit tricky to hand solder, so take it slow, and use plenty of flux.  Place a dab of solder on one of the large pads on the side.  Position the connector on top of the pads making sure that the small pins are centered relative to their respective pads.  While holding the connector in place, melt the dab of solder that was placed earlier so that the one side is held in place.  Now solder the other end of the connector so that it's held in position.  Moving on to the the small pins, I initally tried "drag soldering", but I ended up bridging a lot of pins.  If this happens, just clean it up with some solder wick.
 
 I found that the better way to do this is to pull out the sharpest tip you have for your soldering iron, and placing a tiny dab of solder on each pad, while avoiding touching the adjacent pins with the iron tip.  Again, make sure you use plenty of flux.  This way, the solder will simply flow around the pin without bridging the neighboring pins.
+
+There's probably other connectors out there that can do the same job at a cheaper price.  I'm not an expert on FFC components, so all suggestions are welcome.  (Same thing for the FFC cable)
 
 ### 8) Center and Install PCB
 
@@ -168,13 +176,13 @@ Solder this into the BZ1 position.  Orientation does not matter.
 ![modmmm-11](https://user-images.githubusercontent.com/800930/232109607-c60fbea1-3cc1-49ef-b7e6-3e4ca23203c4.jpg)
 ![modmmm-10](https://user-images.githubusercontent.com/800930/232109664-8749dece-aa71-459b-9a81-3c33fcf8f381.jpg)
 
-Remove the steel backplate from the case if you haven't already.  If you have a Model M with the smaller PCB, you will need to clip away the plastic holder to make room for the larger footprint of the daughterboard.  Make sure the clamp on the FFC connector is lifted up, insert the FFC cable, and press the clamp back down.  Place the daughterboard into position inside the case bottom.  I don't have a good way to secure it to the case (I'm reluctant to drill holes), so a piece of tape or double-sided adhesive foam will do for now.
+Remove the steel backplate from the case if you haven't already.  If you have a Model M that came with a smaller PCB, you will need to clip away the plastic bracket to make room for the larger footprint of the daughterboard.  Make sure the clamp on the FFC connector is lifted up, insert the FFC cable, and press the clamp back down.  Place the daughterboard into position inside the case bottom.  I don't have a good way to secure it to the case (I'm reluctant to drill holes), so a piece of tape or double-sided adhesive foam will do for now.
 
 Put the steel backplate with mounted PCB back into place, and connect the other end of the FFC cable to the main board.  At this point, you can install your switches and keycaps, screw the case back together, and be done!
 
 BUT, after some testing, I noticed that my Kailh Box White switches were not very stable.  This is probably due to the fact they they were 3 pin switches instead of 5, and the hot swap sockets didn't grip the switch pins that tightly.  This is why I opted to make a switch plate to better hold the switches in place.  This also meant I had to cut 3.5mm thick foam (technically 2mm + 1.5mm) to act as a spacer between the PCB and the switch plate.
 
-Unfortunately, there was not enough room in the case to house a single switch plate that spanned the entire board, so I had to break the plate up into smaller sections (9 total), which ended up working pretty well.  The Esc key had its own little 1u switch plate, so the stability still wasn't great, but it'll have to do.  I also messed up the foam spacing for the top row, so I had to cut it off as a separate piece.  This is fixed in the repo version, which is in the `plate-ansi` directory.
+Unfortunately, there was not enough room in the case to house a single switch plate that spanned the entire board, so I had to break the plate up into smaller sections (9 total), which ended up working pretty well.  The Esc key had its own little 1u switch plate, so the stability still wasn't great, but it'll have to do.  I also messed up the foam spacing for the top row, so I had to cut it off as a separate piece.  This is fixed in the repo version, which is in the `plate-ansi` directory.  Plates for other layouts need to be created.
 
 ![modmmm-9](https://user-images.githubusercontent.com/800930/232112496-89a89cb3-0163-47f3-b9e9-8124393ee40b.jpg)
 
