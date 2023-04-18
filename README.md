@@ -4,7 +4,7 @@
 
 # Mod Mmm PCB for the IBM Model M
 
-This project is designed to replace all internal compoents of an IBM Model M keyboard.  The only thing that needs to stay is the curved steel backplate for the PCB to be mounted on.
+This project is designed to replace all internal compoents of an IBM Model M keyboard.  Only the curved steel backplate is needed for the PCB to be mounted on.
 
 Typing test video: https://youtu.be/QOiLOHnEyzo
 
@@ -190,13 +190,13 @@ Put the steel backplate with mounted PCB back into place, and connect the other 
 
 BUT, after some testing, I noticed that my Kailh Box White switches were not very stable.  This is probably due to the fact they they were 3 pin switches instead of 5, and the hot swap sockets didn't grip the switch pins that tightly.  This is why I opted to make a switch plate to better hold the switches in place.  This also meant I had to cut 3.5mm thick foam (technically 2mm + 1.5mm) to act as a spacer between the PCB and the switch plate.
 
-Unfortunately, there was not enough room in the case to house a single switch plate that spanned the entire board, so I had to break the plate up into smaller sections (9 total), which ended up working pretty well.  The Esc key had its own little 1u switch plate, so the stability still wasn't great, but it'll have to do.  I also messed up the foam spacing for the top row, so I had to cut it off as a separate piece.  This is fixed in the repo version, which is in the `plate-ansi` directory.  Plates for other layouts need to be created.
+Unfortunately, there was not enough room in the case to house a single switch plate that spanned the entire board, so I had to break the plate up into smaller sections (9 total), which ended up working pretty well.  The Esc key had its own little 1u switch plate, so the stability still wasn't great, but it'll have to do.  I also messed up the foam spacing for the top row, so I had to cut it off as a separate piece.  This is fixed in the repo version, which is in the `plate-ansi` directory (use v2 unless you have a v1 pcb).  Plates for other layouts need to be created.
 
 ![modmmm-9](https://user-images.githubusercontent.com/800930/232112496-89a89cb3-0163-47f3-b9e9-8124393ee40b.jpg)
 
 ## Inspiration
 
-I want to mention all the projects/products that has inspired the creation of the Model Mmm:
+Thanks to all the project/product creators who have inspired the creation of the Model Mmm:
 
 * [Model-H](https://modelh.club/): Open source USB controller for the Model M
 * [Class 80](https://geekhack.org/index.php?topic=118401.0) by [MMStudio](https://mmkeys.com/): Premium TKL retro-styled board with a solenoid and buzzer
