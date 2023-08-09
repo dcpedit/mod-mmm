@@ -108,7 +108,7 @@ Also realized the logo on the back is way too busy.  I've changed it to be a sma
 
 ### 4) Status Panel LEDs and resistors
 
-These three LEDs go under the status panel (NUM1, CAP1, and SCRL1).  The short pin of the LED goes in the square pad.  As for the accompanying 470Ω resistors (R4, R5, and R6), orientation does not matter.  The LEDs here can be soldered in with extra height so that they sit closer to the "window" cutout on the case, but I have not measured out what that distance should be yet.  Should be easy to do with some putty.
+These three LEDs go under the status panel (NUM1, CAP1, and SCRL1).  The short pin of the LED goes in the square pad.  As for the accompanying 470Ω resistors (R4, R5, and R6), orientation does not matter.  The LEDs here can be soldered in with extra height so that they sit closer to the "window" cutout on the case.  I mesaured the space between the PCB and the window to be 10mm.
 
 ### 5) Switch LEDs and resistors (optional)
 
