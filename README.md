@@ -22,8 +22,10 @@ Image gallery: https://imgur.com/a/R9mSC4u
 * Supports up to 3 rotary encoders
 * Piezo buzzer
 * Solenoid
-* USB-C support via STM32F411 Blackpill.  Need to validate Bluetooth PillBug support.
+* USB-C support via STM32F411 Blackpill.
+* Bluetooth support via PillBug.
 * Vial firmware
+* ZMK firmware (for BT PillBug)
 
 <img width="600" alt="Mod-Mmm-Layout" src="https://user-images.githubusercontent.com/800930/232115156-ab874c28-675d-408f-9d1f-ddae8f0cc6cb.png">
 
@@ -73,6 +75,7 @@ The following is a table of measurements of everything that's stacked on top of 
 | EC11 Rotary Encoder         | 3     | Optional [Link](https://www.mouser.com/ProductDetail/Bourns/PEC12R-4222F-S0024?qs=%252B9%2Fcbd0IE0SDcVz9RehHSg%3D%3D)
 | Rotary Encoder Knob (17mm)  | 3     | Optional [Link](https://www.amazon.com/dp/B07K8589MJ?ref=ppx_yo2ov_dt_b_product_details&th=1)
 | Switch plate (9 piece set)  | 1     | Optional 1.5mm acrylic
+| Case foam (under PCB)       | 1     | Optional 2mm EVA
 | Plate Foam                  | 1     | Optional 3.5mm EVA foam (or 2mm + [1.5mm](https://www.aliexpress.us/item/3256804208838525.html?spm=a2g0o.order_list.order_list_main.5.21ef1802FA7EIC&gatewayAdapt=glo2usa&_randl_shipto=US))
 
 For the Mill-Max 315 series low profile sockets, I found it more cost efficient to just buy a really long socket and cut the sizes I need with flush cutters.  [Here's an example of a 1x64 socket.](https://www.mouser.com/ProductDetail/Mill-Max/315-93-164-41-003000?qs=WZRMhwwaLl%252BIMh92Iwf2Uw%3D%3D&countryCode=US&).  The only thing is that the edges are rough after the cut, but it doesn't bother me.
