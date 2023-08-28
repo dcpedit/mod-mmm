@@ -137,12 +137,18 @@ I found that the better way to do this is to pull out the sharpest tip you have 
 
 There's probably other connectors out there that can do the same job at a cheaper price.  I'm not an expert on FFC components, so all suggestions are welcome.  (Same thing for the FFC cable)
 
-### 8) Center and Install PCB
+### 8) Install PCB standoffs
 ![build-circled](https://user-images.githubusercontent.com/800930/232625466-0676a615-4421-4da6-9b45-dd2a7633bbeb.jpg)
 
 Starting with the steel backplate, insert a screw from the back and screw a standoff on from the other side.  Keep it loose enough so that the standoff can rattle around a bit.  Do this for all the mount holes on the steel plate, even if you end up not using them because they're still good for support.  Make note of the holes that are left open in my photo above (circled red) and do the same to prevent interference with the case/components. You should also put a standoff in corner top-right hole beneath the plastic post (circled green) for added support.
 
 Slip the steel backplate back into the bottom of the case.  You'll need to slide the bottom into the slots first, and then place the plastic case posts into the top-left and top-right corners of the steel backplate.
+
+### 9) Case foam (optional)
+
+If you opted for the 2mm EVA case foam, you'll need to place it over the steel plate before installing the PCB.  The holes in the foam should line up over the standoffs. (Filename: `pcb/case-foam.ai`)
+
+### 10) Center and Install PCB
 
 Line up the PCB over the holes and place 2 or 3 screws positioned horizontally from each other near the center of the PCB.  Push the center firmly down onto the standoffs to force the PCB to bend (this part is a bit nerve racking, especialy when you hear creaking noises), and secure it with the screws while holding it in place.
 
