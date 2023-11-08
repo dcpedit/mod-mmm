@@ -11,3 +11,9 @@ https://github.com/dcpedit/vial-qmk-dev/tree/vial/keyboards/dcpedit/modmmm
 You can view the sourcecode in my fork:
 
 https://github.com/dcpedit/zmk/tree/dcpedit/app/boards/shields/modmmm
+
+Build command
+
+```
+west build -b pillbug -- -DSHIELD=modmmm
+```
