@@ -1566,6 +1566,7 @@
   (no_connect (at 92.71 128.27) (uuid b0cba556-1338-4555-8ddd-2dca6ff8e7d9))
   (no_connect (at 120.65 82.55) (uuid d5d0b9f1-b172-4cdc-8fad-03ed574ed425))
   (no_connect (at 74.93 90.17) (uuid eb60cd98-406f-4b15-86ca-9deed25f72e9))
+  (no_connect (at 100.33 128.27) (uuid ed3504fe-aa49-4b10-9be4-6966278b61ee))
   (no_connect (at 74.93 85.09) (uuid f6c782b0-bebd-46bb-a979-b4b8f132c4b7))
 
   (wire (pts (xy 64.77 115.57) (xy 74.93 115.57))
@@ -2293,24 +2294,6 @@
     (pin "1" (uuid bbacf8e2-31d1-4c06-9355-ccc57bc8046f))
   )
 
-  (symbol (lib_id "kicad_port-rescue:GND-power") (at 100.33 128.27 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid a320faa1-73a3-402b-83ed-2307e7de7bab)
-    (property "Reference" "#PWR0106" (id 0) (at 100.33 134.62 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GND" (id 1) (at 100.457 131.5212 90)
-      (effects (font (size 1.27 1.27)) (justify right))
-    )
-    (property "Footprint" "" (id 2) (at 100.33 128.27 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 100.33 128.27 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 0614e3bd-8a91-4224-97b3-8e79b0fdba15))
-  )
-
   (symbol (lib_id "Device:R_Small") (at 50.8 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid b30f8044-a9f2-4e6e-a751-6ba743f04a32)
@@ -2457,9 +2440,6 @@
     )
     (path "/413e3f9e-9b4b-4eda-aa58-cf49417877bd"
       (reference "#PWR0105") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/a320faa1-73a3-402b-83ed-2307e7de7bab"
-      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
     )
     (path "/3d243fdb-41fd-499a-9e6c-1ff5343cde77"
       (reference "#PWR0107") (unit 1) (value "+5V") (footprint "")
