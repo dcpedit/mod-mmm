@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "logo")(type "KiCad")(uri "${KIPRJMOD}/logo.pretty")(options "")(descr ""))
+  (lib (name "Keebio-Parts")(type "KiCad")(uri "${KIPRJMOD}/lib/Keebio-Parts.pretty")(options "")(descr ""))
+  (lib (name "MX_Only")(type "KiCad")(uri "${KIPRJMOD}/lib/MX_Only.pretty")(options "")(descr ""))
+)
