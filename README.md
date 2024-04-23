@@ -67,8 +67,8 @@ The following is a table of measurements of everything that's stacked on top of 
 | TIP120 Transistor           | 1     | For solenoid. [Link](https://www.amazon.com/gp/product/B08212F42Z/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
 | 1N4001 Diode                | 1     | For solenoid. Comes with above kit |
 | 2.2kΩ Resistor              | 1     | For solenoid. Comes with above kit |
-| Mill-Max 315 sockets (1x20) | 2     |
-| Mill-Max 315 sockets (1x4)  | 1     |
+| Mill-Max 310 sockets (1x20) | 2     |
+| Mill-Max 310 sockets (1x4)  | 1     |
 | Mill-Max round pin (¼in)    | 44    | [Link](https://www.mouser.com/ProductDetail/Mill-Max/3320-0-00-15-00-00-03-0?qs=s8Nb1z4Wn%2FQ16WBIwCPrTw%3D%3D&countryCode=US&currencyCode=USD)
 | 2u plate mount stabalizer   | 7     | Count varies based on layout
 | 7u plate mount stabalizer   | 1     | For 7u spacebar
@@ -78,7 +78,7 @@ The following is a table of measurements of everything that's stacked on top of 
 | Case foam (under PCB)       | 1     | Optional 2mm EVA
 | Plate Foam                  | 1     | Optional 3.5mm EVA foam (or 2mm + [1.5mm](https://www.aliexpress.us/item/3256804208838525.html?spm=a2g0o.order_list.order_list_main.5.21ef1802FA7EIC&gatewayAdapt=glo2usa&_randl_shipto=US))
 
-For the Mill-Max 315 series low profile sockets, I found it more cost efficient to just buy a really long socket and cut the sizes I need with flush cutters.  [Here's an example of a 1x64 socket.](https://www.mouser.com/ProductDetail/Mill-Max/315-93-164-41-003000?qs=WZRMhwwaLl%252BIMh92Iwf2Uw%3D%3D&countryCode=US&).  The only thing is that the edges are rough after the cut, but it doesn't bother me.
+For the Mill-Max 310 series low profile sockets, I found it more cost efficient to just buy a really long socket and cut the sizes I need with flush cutters.  [Here's an example of a 1x64 socket.](https://www.mouser.com/ProductDetail/Mill-Max/310-93-164-41-001000).  The only thing is that the edges are rough after the cut, but it doesn't bother me.
 
 You can probably use others ways to mount the Blackpill.  Just make sure that final height of the USB port is somewhat centered inside the case port.
 
@@ -180,7 +180,7 @@ It's probably best to flash the firmware onto the Blackpill first using the `bin
 * Press and release NRST (reset) button
 * Release BOOT0 button
 
-Solder the Mill-Max 315 sockets onto the daughterboard.  Then place a piece of masking tape over the pin holes, and insert each pin though the tape and into its hole with tweezers.  Then set the Blackpill into place with the components facing up and the USB port facing the top of the daughterboard.  Solder the pins into place, and then carefully and slowly remove the Blackpill.  If you pull too fast and hard, one edge will suddenly pop loose, bending the pins on the opposite side.  Remove the masking tape, and push the Blackpill back into place.
+Solder the Mill-Max 310 sockets onto the daughterboard.  Then place a piece of masking tape over the pin holes, and insert each pin though the tape and into its hole with tweezers.  Then set the Blackpill into place with the components facing up and the USB port facing the top of the daughterboard.  Solder the pins into place, and then carefully and slowly remove the Blackpill.  If you pull too fast and hard, one edge will suddenly pop loose, bending the pins on the opposite side.  Remove the masking tape, and push the Blackpill back into place.
 
 Lazy-man's short cut: skip the masking tape.  But note that using too much solder will cause it to flow down the pin and into the socket.  If this happens, the keyboard will still work, but you won't be able to remove the Blackpill without desoldering.
 
