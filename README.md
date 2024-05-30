@@ -29,6 +29,12 @@ Image gallery: https://imgur.com/a/R9mSC4u
 
 <img width="600" alt="Mod-Mmm-Layout" src="https://user-images.githubusercontent.com/800930/232115156-ab874c28-675d-408f-9d1f-ddae8f0cc6cb.png">
 
+## Ortholinear Edition
+
+There is a separate PCB that supports ortholinear layout.  Details are located here:  [Ortholinear Edition](pcb-ortho)
+
+<img width="600" src="https://i.imgur.com/g60BMQH.jpeg"/>
+
 ## The Build "Stack"
 
 The following is a table of measurements of everything that's stacked on top of the steel backplate.  The key spacing was taken from hires scans I made of the Model M's wiring membrane.  I recalculated the spacing for each decrease in radius except for the foam where I reused the numbers from the switch plate.  I was lazy and figured foam can stretch anyways.
@@ -199,9 +205,17 @@ Put the steel backplate with mounted PCB back into place, and connect the other 
 
 BUT, after some testing, I noticed that my Kailh Box White switches were not very stable.  This is probably due to the fact they they were 3 pin switches instead of 5, and the hot swap sockets didn't grip the switch pins that tightly.  This is why I opted to make a switch plate to better hold the switches in place.  This also meant I had to cut 3.5mm thick foam (technically 2mm + 1.5mm) to act as a spacer between the PCB and the switch plate.
 
-Unfortunately, there was not enough room in the case to house a single switch plate that spanned the entire board, so I had to break the plate up into smaller sections (9 total), which ended up working pretty well.  The Esc key had its own little 1u switch plate, so the stability still wasn't great, but it'll have to do.  I also messed up the foam spacing for the top row, so I had to cut it off as a separate piece.  This is fixed in the repo version, which is in the `plate-ansi` directory (use v2 unless you have a v1 pcb).  Plates for other layouts need to be created.
+Unfortunately, there was not enough room in the case to house a single switch plate that spanned the entire board, so I had to break the plate up into smaller sections (9 total), which ended up working pretty well.  The Esc key had its own little 1u switch plate, so the stability still wasn't great, but it'll have to do.  I also messed up the foam spacing for the top row, so I had to cut it off as a separate piece.  This is fixed in the repo version, which is in the `case/plate-ansi_v2.ai`.  Plates for other layouts need to be created.
 
 ![modmmm-9](https://user-images.githubusercontent.com/800930/232112496-89a89cb3-0163-47f3-b9e9-8124393ee40b.jpg)
+
+### f) F-row Plate support 
+
+During my testing, I found that the F row keys (especially the ESC key) were not very stable due to the switch plate being only 1u in height. To fix this, I decied to remove the 1.5mm foam under these keys, and replace it with a long strip of 1.5mm acrylic. I then used acrylic cement to glue the small switch plates to this strip, giving the entire top row some much needed support.
+
+The layer in the plate file should be labeled `F-row support`.
+
+The easiest way to apply the acrylic cement (I use Weld-On #4) is to mount lay the 2mm foam down on top of the PCB, place the F-row support strip on top, the small switch plates on top of that, and finally install some switches to hold everything in place. Then using your needle tip applicator, run it along the top edge between the switch plate and support while using gravity to pull the cement into the gap. Then tilt your keyboard back so that the bottom edge is up, and do the same thing along the bottom edge, again using gravity to pull the cement into the gap.
 
 ## Inspiration
 
