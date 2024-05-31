@@ -1,3 +1,9 @@
+# QMK/VIA Firmware (for BlackPill)
+
+There is a separate binary for standard layout and ortholinear.  For VIA, you will need to sideload the associated `*via.json` file until it's officially supported.
+
+https://github.com/dcpedit/qmk_firmware/tree/modmmm/keyboards/dcpedit/modmmm
+
 # Vial Firmware (for BlackPill)
 
 https://get.vial.today
