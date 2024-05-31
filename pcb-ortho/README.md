@@ -26,7 +26,7 @@ I wasn't able to find 3.5mm foam, so my stack (for the alpha keys only) ends up 
 | ----- | -------- | ----------- |
 | 1     | 1.0 mm     | Steel backplate |
 | 2     | 2.0 mm     | Case foam |
-| 3     | 1.6 mm     | PCB |
+| 3     | 1.0 mm     | PCB |
 | 4     | 1.0 mm     | Switch spacer pad |
 | 5     | 1.5 mm     | Plate foam |
 | 6     | 2.0 mm     | Plate foam |
